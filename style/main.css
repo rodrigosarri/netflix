@@ -1,0 +1,112 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+    --silver: #AAA;
+    --white: #fff;
+
+    --size-small: 4px;
+    --size-medium: 8px;
+    --size-larger: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--red);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+    margin-left: var(--size-small);
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--silver);
+    margin-right: var(--size-medium);
+}
+
+header nav a:hover {
+    color: var(--white);
+}
+
+.main-movie {
+    font-size: var(--size-larger);
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50) 100%), url('../img/cover.jpg') top center;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: var(--size-larger);
+}
+
+.container {
+    padding: var(--size-larger);
+    width: 100%;
+}
+
+.main-movie .title {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.main-movie .desc {
+    margin-bottom: 40px;
+    line-height: 28px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: var(--white);
+    padding: var(--size-medium);
+    text-transform: uppercase;
+    margin-right: var(--size-medium);
+    font-size: 12px;
+    border-radius: var(--size-small);
+    transition: .3s ease all;
+    display: flex;
+    align-items: center;
+}
+
+.buttons button:hover {
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
+
+.buttons button span {
+    margin-right: var(--size-medium);
+}
+
+.carousel-movies {
+    padding: var(--size-larger) 0;
+}
+
+.movie-img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
