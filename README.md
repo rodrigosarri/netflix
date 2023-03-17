@@ -1,5 +1,5 @@
 
-# Instagram Página inicial
+# Netflix Página inicial
 
 Esse é um projeto da releitura da página do Netflix para aprendizado no curso **JavaScript Game Developer** promovido pela *Digital Innovation One*
 
